@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  background-image: url(../Pics/Scotland-Pixabay-1200x800.jpg);
+  background-size: cover;
+}
+
+img {
+  width: 200px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+span {
+  width: 60vw;
+  height: 60vh;
+  position: absolute;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.SignUp {
+  position: absolute;
+  height: 98%;
+  width: 50%;
+  background-image: url(../Pics/TNC_PC2022_5c1061720bf6da3b55d32cb7c3ea5b82-original.jpg);
+  background-size: cover;
+  right: 0.5%;
+  top: 1%;
+  border-radius: 30% 50px 50px 30%;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+span > form > h2 {
+  font-size: 2em;
+  position: absolute;
+  top: 30px;
+}
+
+form {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.username {
+  position: absolute;
+  top: 105px;
+  width: 70%;
+}
+
+.username > input,
+.password > input {
+  padding-top: 20px;
+}
+
+.password {
+  position: absolute;
+  top: 170px;
+  width: 70%;
+}
+
+.form-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: 1px solid #a1a1a1;
+  outline: none;
+  padding: 16px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.form-label {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  padding: 0 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form-control:focus + .form-label {
+  top: 2px;
+  left: 0;
+  z-index: 10;
+  font-weight: 400;
+  font-size: 10px;
+  color: #a1a1a1;
+}
+
+.form-control:focus {
+  border: 1px solid #1866c9;
+  border-bottom: 2px solid rgb(49, 47, 168);
+  background-color: transparent;
+}
+
+input[type="submit"]:hover {
+  box-shadow: gray 0px 0px 4px inset;
+}
+.SignUpBtn:hover {
+  box-shadow: gray 2px 1px 6px inset;
+}
+
+.form-control:not(:focus):valid + label {
+  top: 2px;
+  left: 0;
+  z-index: 10;
+  font-weight: 400;
+  font-size: 10px;
+  color: #a1a1a1;
+}
+
+.visiblty {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  position: absolute;
+  top: 225px;
+}
+
+input[type="submit"],
+span > div > .SignUpBtn {
+  width: 150px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: rgb(0, 0, 0) 0px 1px 2px inset;
+}
+
+input[type="submit"] {
+  position: absolute;
+  bottom: 20%;
+}
+.showlabel {
+  font-size: 14px;
+}
+
+.SignUp > p {
+  width: 70%;
+  margin-top: 10px;
+  color: #fff;
+}
+.SignUp > h2 {
+  margin-top: 30%;
+}
+.SignUpBtn {
+  margin-top: 20px;
+}

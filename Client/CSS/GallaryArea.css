@@ -1,0 +1,42 @@
+/*---------- Gallary Area ----------*/
+
+#GallaryArea {
+  height: var(--Area-hieght);
+  background-color: rgb(176, 167, 167);
+  display: flex;
+  flex-wrap: wrap; /* Allows the images to wrap to the next line */
+  justify-content: space-between; /* Distribute images across the row */
+  align-items: center; /* Vertically center images */
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+#GallaryArea > .card {
+  width: 30%;
+  height: 40vh;
+  margin: 0 20px;
+}
+
+#GallaryArea > .card > img {
+  width: 100%;
+  min-height: 90%;
+  user-select: none;
+}
+
+#GallaryArea > .card > a {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#GallaryArea > .card > div > h5 {
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+#GallaryArea > .card > div > p {
+  position: absolute;
+  bottom: 15%;
+  text-align: left;
+}

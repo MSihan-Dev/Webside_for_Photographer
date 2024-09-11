@@ -1,0 +1,157 @@
+:root {
+  --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+}
+hr {
+  margin: 5px;
+}
+
+.card-body {
+  padding: 5px;
+  width: 100%;
+}
+#appoinments > .card-body > .row {
+  width: 100%;
+}
+
+#appoinments {
+  padding: 10px;
+  height: 250px;
+}
+#appoinments > .card-body {
+  overflow: hidden scroll;
+  position: relative;
+  padding-left: 10px;
+}
+
+#appoinments > .title {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(175, 175, 175);
+  padding: 5px 20px;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+#appoinments > .title > h6 {
+  margin: auto 0;
+}
+
+#appoinments > .title > h5 {
+  margin: 4px 0;
+}
+
+#appoinments > .title > div {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  width: 50px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+#barchart {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+#barchart > .card-body > .box {
+  height: 300px;
+  border-bottom: solid black 2px;
+  border-left: solid black 2px;
+  display: flex;
+  /* justify-content: end; */
+  gap: 20px;
+  padding: 0 25px;
+  position: relative;
+  align-items: end;
+  margin-left: 35px;
+}
+
+#barchart > .card-body > .box > .bar {
+  width: 50px;
+  height: 200px;
+  background-color: blue;
+  border-radius: 8px;
+  margin-bottom: 3px;
+}
+
+#barchart > .filter {
+  box-shadow: var(--shadow);
+  width: 140px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+}
+
+#barchart > .card-body > .weeks {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0 40px;
+  width: 71%;
+  margin-left: 35px;
+  gap: 40px;
+}
+#barchart > .card-body > .weeks > .fri,
+.sat {
+  padding-left: 6px;
+}
+
+#barchart > .card-body > .number,
+#barchart > .card-body > .box > .slash {
+  position: absolute;
+  left: 2px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+  gap: 5px;
+  height: 300px;
+  padding-bottom: 10px;
+  margin-left: 5px;
+}
+
+#barchart > .card-body > .box > .slash {
+  left: -10px;
+}
+
+#barchart > .card-title {
+  margin-top: 10px;
+}
+
+#Note {
+  height: 250px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+#Note > .card-title {
+  margin: 10px;
+  padding-bottom: 5px;
+  border-bottom: black solid 2px;
+  background-color: bisque;
+  border-radius: 10px;
+}
+#Note > .card-body > textarea {
+  all: unset;
+  width: 95%;
+  height: 90%;
+  padding: 10px;
+  text-align: left;
+}

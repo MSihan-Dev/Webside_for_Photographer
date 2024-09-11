@@ -1,0 +1,26 @@
+/*---------- Pricing Area ----------*/
+
+#PricingArea {
+  margin-top: 5px;
+  padding: 10px 20px;
+}
+
+#PricingArea > span {
+  margin: 20px auto;
+  border-top: solid red 2px;
+  background-image: url(../../Pics/Scotland-Shutterstock-1200x800__FocusFillWzEyMDAsNjMwLCJ5Iiw4NV0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image covers the entire span */
+}
+
+#PricingArea > .card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#PricingArea > .card > .card-body {
+  text-align: left;
+}
+
+#PricingArea > .card > .card-body > .card-contant > li {
+  list-style: inside;
+}
